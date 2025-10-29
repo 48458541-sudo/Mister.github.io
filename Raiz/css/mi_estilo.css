@@ -1,0 +1,415 @@
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+/* tamaño fijo del logo*/
+img#logo {
+  width: 150px;   /* o 120px, un tamaño fijo */
+  height: auto;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;/*line-height controla la altura de cada línea de texto, es decir, 
+                        el espacio vertical entre las líneas de un párrafo.*/
+  margin: 0;       /* si coloco un solo valor afecta los 4 lados */
+  background: #f4f6f8;
+  
+}
+/*menu----------------------------------------------------------------------------------------*/
+nav {
+  background-color: #222;        /* fondo oscuro */
+  padding: 10px 0;
+  margin-top: 8px;
+}
+nav ul {
+  list-style: none;              /* sin viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;                 /* en línea */
+  justify-content: center;       /* centrado */
+  gap: 30px;                     /* espacio entre botones */
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+nav ul li a {
+  text-decoration: none;         /* sin subrayado */
+  color: white;                  /* color texto */
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ff4500;     /* color al pasar el mouse */
+  color: #fff;
+}
+
+
+
+/* header -----------------------------------------------------------*/
+
+header {
+  background-color: #1a1a1a; /* fondo oscuro */
+  color: #fff;               /* color de texto blanco */
+  text-align: center;        /* centrado */
+  padding: 50px 20px;        /* espacio alrededor */
+}
+
+header h1 {
+  font-size: 3em;            /* tamaño grande para destacar */
+  margin: 0 0 20px 0;        /* espacio abajo */
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: 2px;       /* espacio entre letras */
+}
+
+
+/* main ------------------------------------------------------------*/
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 18px;
+  box-shadow: 15px 2px 8px rgba(0,0,0,0.06);
+}
+
+/* video ------------------------------------------------------- */
+video {
+  width: 35%;
+}
+
+
+/*footer----------------------------------------------------------------*/
+footer {
+  background: #17202a;
+  color: #c7d2da;
+  padding: 16px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Estilos tabla ----------------------------------------------- ---------*/
+
+/* Estilo para la tabla de equipos */
+.titulo-tabla{
+  text-align: center;
+}
+table.equipos {
+  width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+  border-collapse: collapse; /* Quita los espacios entre celdas */
+  margin-top: 12px; /* Separación superior con otros elementos */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados en la tabla */
+  overflow: hidden; /* Para que los bordes redondeados funcionen correctamente */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Estilo para celdas (th y td) */
+table.equipos th, table.equipos td {
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 12px; /* Espacio interior */
+  text-align: left; /* Alineación del texto a la izquierda */
+  vertical-align: middle; /* Centra verticalmente el contenido */
+}
+
+/* Estilo solo para encabezados */
+table.equipos th {
+  background-color: #0b3d91; /* Fondo azul oscuro */
+  color: white; /* Texto blanco */
+  text-transform: uppercase; /* Encabezados en mayúsculas */
+  letter-spacing: 0.03em; /* Espaciado entre letras */
+}
+
+/* Filas pares con color de fondo más claro */
+table.equipos tr:nth-child(even) {
+  background-color: #f3f3f3; /* Gris muy claro */
+}
+
+/* Filas impares con fondo blanco */
+table.equipos tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanco */
+}
+
+/* Efecto hover al pasar el mouse sobre una fila */
+table.equipos tr:hover {
+  background-color: #e0e7ff; /* Azul claro para resaltar */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la fila */
+}
+
+/* Centrado opcional si está dentro de un contenedor */
+.tabla-equipos table {
+  margin: 0 auto; /* Centra la tabla */
+  width: auto; /* Ajusta el ancho al contenido */
+  border-collapse: collapse; /* Colapsa bordes */
+}
+
+/* Estilo para tabla de contacto */
+table.contacto {
+  border-collapse: separate; /* Mantiene separación entre celdas */
+  border-spacing: 5px; /* Espacio entre celdas */
+  margin: 0 auto; /* Centra la tabla */
+  text-align: center; /* Centra el contenido de las celdas */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Para que los bordes redondeados funcionen */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Encabezados de la tabla contacto */
+table.contacto th {
+  background-color: #0b3d91; /* Fondo azul oscuro */
+  color: white; /* Texto blanco */
+  padding: 12px; /* Espacio interior */
+  text-transform: uppercase; /* Mayúsculas */
+  letter-spacing: 0.03em; /* Espaciado entre letras */
+}
+
+/* Filas pares y hover para contacto */
+table.contacto tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+table.contacto tr:hover {
+  background-color: #e0e7ff;
+  cursor: pointer;
+}
+
+/* Celdas de contacto */
+table.contacto td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+/* historia-----------------------------------------*/
+.caja {
+  display: flex;           /* imagen y texto en línea horizontal */
+  align-items: center;     /* centra verticalmente */
+  gap: 15px;               /* espacio entre imagen y texto */
+}
+
+.caja img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;       /* mantiene proporción */
+  transition: transform 0.3s ease;
+}
+
+.caja img:hover {
+  transform: scale(1.1);  /* efecto hover */
+}
+
+.descripcion {
+  max-width: 500px;        /* limita ancho del texto */
+}
+.contenido-principal {
+  display: flex;             /* flex horizontal */
+  gap: 20px;                 /* espacio entre main y aside */
+  align-items: flex-start;   /* alinea arriba */
+}
+
+.main-text {
+  flex: 2;                   /* ocupa más espacio */
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* ver--------------------------------**/
+
+
+/* galeria de imagenes---------------------------*/
+.galeria_titulo{
+ text-align: center;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.galeria img {
+  width: 100%;           /* ocupa todo el ancho del contenedor */
+  max-width: 250px;      /* no se hace más grande de 250px */
+  height: auto;          /* mantiene proporción */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/*--------------------------------------------formulario de ingreso-------------------------------------------------------------------------------*/
+
+                                                                    
+                                        .formulario {
+                                          max-width: 450px;         /* Ancho máximo del formulario */
+                                          margin: 20px auto;        /* Centrado horizontal con margen superior e inferior */
+                                          padding: 20px;            /* Espacio interno alrededor del contenido */
+                                          background-color: #f9f9f9;/* Fondo gris muy claro */
+                                          border: 1px solid #ddd;   /* Borde gris claro */
+                                          border-radius: 8px;       /* Bordes redondeados */
+                                          font-family: Arial, sans-serif; /* Fuente del formulario */
+                                        }
+
+                                        /* Etiquetas */
+                                        .formulario label {
+                                          display: block;           /* Cada label ocupa toda la línea */
+                                          font-weight: bold;        /* Texto en negrita */
+                                          margin-top: 10px;         /* Margen superior */
+                                          margin-bottom: 5px;       /* Margen inferior */
+                                        }
+
+                                        /* Inputs, select y textarea */
+      .formulario input[type="text"],.formulario select,.formulario textarea {
+
+                                          width: 100%;              /* Ocupa todo el ancho del contenedor */
+                                          padding: 8px;             /* Espacio interno dentro del input */
+                                          border: 1px solid #ccc;   /* Borde gris */
+                                          border-radius: 5px;       /* Bordes ligeramente redondeados */
+                                          box-sizing: border-box;   /* Incluye padding y borde en el ancho total */
+                                          font-size: 14px;          /* Tamaño de letra */
+                                        }
+
+                                        /* Checkbox estilo inline */
+                                        .formulario .juegos input[type="checkbox"] {
+                                         width: auto;             /* Ancho automático para checkbox */
+                                         margin-right: 5px;        /* Espacio a la derecha del checkbox */
+                                        }
+
+                                        .formulario .juegos label {
+                                          font-weight: bold;      /* Etiquetas de checkbox no en negrita */
+                                          margin-right: 15px;       /* Separación entre checkboxes */
+                                        }
+
+                                        /* Textarea */
+                                        .formulario textarea {
+                                          min-height: 100px;        /* Altura mínima del área de texto */
+                                          resize: vertical;         /* Solo se puede redimensionar verticalmente */
+                                        }
+
+                                        /* Botón enviar */
+                                        .formulario button {
+                                          margin-top: 15px;             /* Separación superior respecto a otros elementos */
+                                          width: 100%;                  /* Ocupa todo el ancho del formulario */
+                                          padding: 10px;                /* Espacio interno */
+                                          font-size: 16px;              /* Tamaño del texto */
+                                          font-weight: bold;            /* Negrita */
+                                          border: none;                 /* Sin borde */
+                                          border-radius: 5px;           /* Bordes redondeados */
+                                          background-color: #007bff;    /* Color azul del botón */
+                                          color: #fff;                  /* Texto blanco */
+                                          cursor: pointer;              /* Cursor puntero al pasar sobre el botón */
+                                          transition: background-color 0.3s ease; /* Efecto de transición suave al cambiar color */
+                                        }
+
+                                        .formulario button:hover {
+                                          background-color: #0056b3;    /* Color más oscuro al pasar el mouse */
+                                        }
+
+                                        /* Lista de integrantes */
+                                        .formulario ul {
+                                          list-style: none;          /* Quita viñetas de la lista */
+                                          padding-left: 0;           /* Quita margen izquierdo */
+                                        }
+
+                                        .formulario ul li {
+                                          margin-bottom: 8px;        /* Espacio entre cada integrante */
+                                        }
+
+
+/* contacto----------------------------- -----------------------------------------------------------------*/
+
+
+          /* Contenedor de la tabla de contacto */
+          table.contacto {
+              width: 100%;                 /* ocupa todo el ancho del contenedor */
+              max-width: 600px;            /* opcional, limita el ancho */
+              margin: 20px auto;           /* centrado horizontal y margen superior */
+              border-collapse: collapse;   /* quita los espacios entre celdas */
+              background-color: #f9f9f9;   /* fondo claro */
+              border: 1px solid #ddd;      /* borde suave */
+              border-radius: 8px;           /* bordes redondeados */
+              box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra sutil */
+              font-family: Arial, sans-serif;
+          }
+
+/* Encabezados de la tabla */
+table.contacto th {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 12px;    
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #0056b3; /* borde inferior sutil */
+}
+
+/*Filas de contenido */
+table.contacto td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/*Enlaces dentro de la tabla */
+table.contacto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+table.contacto a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Texto debajo de la tabla */
+.contacto-info p {
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+#claret {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+table.contacto{
+    background-color: #333;  
+    padding: 5px; /* ancho de los bordes de la tabla*/
+ 
+}
+

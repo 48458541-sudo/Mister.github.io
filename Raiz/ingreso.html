@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de ingreso</title>
+  <link rel="stylesheet" href="css/mi_estilo.css">
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+</head>
+<body>
+
+<header>
+  <div>
+    <img src="img/logo.png" alt="Logo eSports" id="logo">
+    <h1>Ahora, ¿Cómo se anotan a los torneos?</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="equipos.html">Equipos</a></li>
+      <li><a href="form.html">Ingreso</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2 class="titulo-form">Completando este formulario vas a poder inscribirte a un torneo</h2>
+
+  <form class="formulario">
+
+    <!-- Nombre del equipo -->
+    <label>Nombre del equipo:
+      <input type="text" name="nombre" required>
+    </label>
+
+    <!-- Juegos -->
+    <label>Juegos en los que vas a participar:</label>
+    <div class="juegos">
+      <label><input type="checkbox" name="juegos" value="LOL"> League of Legends</label>
+      <label><input type="checkbox" name="juegos" value="CSGO"> CS:GO</label>
+      <label><input type="checkbox" name="juegos" value="Overwatch"> Overwatch</label>
+      <label><input type="checkbox" name="juegos" value="Dota2"> Dota 2</label>
+      <label><input type="checkbox" name="juegos" value="FIFA"> FIFA</label>
+    </div>
+
+    <!-- Nacionalidad -->
+    <label>Nacionalidad del equipo:
+      <select name="nacionalidad">
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="brasil">Brasil</option>
+        <option value="paraguay">Paraguay</option>
+      </select>
+    </label>
+
+    <!-- Integrantes -->
+    <label>Integrantes del equipo:</label>
+    <div class="integrantes">
+      <input type="text" name="jugador1" placeholder="Jugador 1" required>
+      <input type="text" name="jugador2" placeholder="Jugador 2" required>
+      <input type="text" name="jugador3" placeholder="Jugador 3" required>
+      <input type="text" name="jugador4" placeholder="Jugador 4" required>
+      <input type="text" name="jugador5" placeholder="Jugador 5" required>
+    </div>
+
+    <!-- Sugerencias -->
+    <label>Sugerencias:
+      <textarea name="sugerencias" rows="5"></textarea>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h4>Para conocer las reglas de los eSports revisá este 
+    <a href="https://cessi.org.ar/wp-content/uploads/2022/07/Reglamento-eSports-CESSI.pdf">PDF</a>
+  </h4>
+</main>
+
+<footer>
+  <p>© 2025 Mi Sitio de eSports - Todos los derechos reservados - Colegio Claret - Fabrizio Fiorentino - Milton Ruiz</p>
+</footer>
+
+</body>
+</html>
